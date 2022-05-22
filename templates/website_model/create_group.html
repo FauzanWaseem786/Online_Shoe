@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'website_model/home.html' %}
+{% load static %}
+{% block body_block %}
+<marquee class="scr" direction="down" height="800" width="280" bgcolor= "white" margin-top="100px" object-position="center" >Scrolling text
+<a href="https://www.techonthenet.com/mysql/index.php">want to learn sql  <img src="{% static 'website_model/sdl1.jpg'%}" alt=""> <img src="{% static 'website_model/sdl3.jpg'%}" alt=""> <img src="{% static 'website_model/sdl2.jpg'%}" alt=""></a>
+
+</marquee>
+<div class="firm ">
+<div class="bx">
+
+
+      <h1>Create you own group!</h1>
+      <h3>And expand your connections with traders all over the world. </h3>
+<form enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+        {{ grp.as_p }}
+<input  class="sbtn" type="submit" name="submit" value="Submit">
+      </form>
+
+    <a href="{% url 'website_model:grps' %}">Join another group.</a>
+
+    </div>
+</div>
+{% endblock %}

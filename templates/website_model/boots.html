@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'website_model/home.html' %}
+{% load static  %}
+{%block body_block%}
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4"><img class="col-lg" src="{% static 'website_model/bts1.jpg' %}" alt=""></div>
+    <div class="col-lg-4"><img class="col-lg" src="{% static 'website_model/bts2.jpg' %}" alt=""></div>
+
+
+  </div>
+  <div class="row">
+    <div class="col-lg-4"><img class="col-lg" src="{% static 'website_model/bts3.jpg' %}" alt=""></div>
+    <div class="col-lg-4"><img class="col-lg"  src="{% static 'website_model/bts5.png' %}" alt=""></div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4"><img class="col-lg" src="{% static 'website_model/bts4.jpg' %}" alt=""></div>
+    </div>
+
+</div>
+{% endblock %}

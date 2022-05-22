@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'website_model/home.html' %}
+{% load static %}
+{% block body_block %}
+<div class="" style="background: #191111 text: 'white'">
+<h1>We are Located in the Mountaineous terrains of India-Nepal Border :</h1>
+<h2>Want to visit us be sure to book a room in the 3 star chain of hotels owned by us:</h2>
+
+
+  <div class="loc">
+   <img class="mySlides" src="{% static 'website_model/loc.png'%}" style="width:100%">
+   <img class="mySlides" src="{% static 'website_model/loc2.jpg'%}" style="width:100%">
+   <img class="mySlides" src="{% static 'website_model/loc3.jpg'%}" style="width:100%">
+
+
+   <button class="bleft" onclick="plusDivs(-1)">&#10094;</button>
+   <button class="bright" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+</div>
+{% endblock%}

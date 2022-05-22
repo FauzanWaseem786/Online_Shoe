@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'website_model/home.html' %}
+{% load static  %}
+{% block body_block %}
+
+<div class="grd-box">
+ <a href="{% url 'website_model:shoes' %}">  <img src="{% static 'website_model/shos.png' %}" alt="choose you shoes"> </a><a href="{% url 'website_model:slippers' %}">  <img src="{% static 'website_model/slippers.jpg' %}" alt="choose you shoes"> </a>
+<a href="{% url 'website_model:sandals' %}">  <img src="{% static 'website_model/sandals.png' %}" alt="choose you shoes"> </a><a href="{% url 'website_model:boots' %}">  <img src="{% static 'website_model/boots.png' %}" alt="choose you shoes"> </a>
+</div>
+
+<div class="w3-content w3-display-container">
+ <img class="mySlides" src="{% static 'website_model/slide1.jpg'%}" style="width:100%">
+ <img class="mySlides" src="{% static 'website_model/slide4.jpg'%}" style="width:100%">
+ <img class="mySlides" src="{% static 'website_model/slide2.jpg'%}" style="width:100%">
+ <img class="mySlides" src="{% static 'website_model/slide4.jpeg'%}" style="width:100%">
+ <img class="mySlides" src="{% static 'website_model/slide5.jpeg'%}" style="width:100%">
+
+
+ <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+ <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+{% endblock %}

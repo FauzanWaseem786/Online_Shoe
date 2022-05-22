@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends "website_model/home.html" %}
+{% block body_block %}
+  <div class="or">
+    <div class="blolx">
+    <h1>Login here :</h1>
+      <form method="post" action="{% url 'website_model:pass_change_otp' %}">
+          {% csrf_token %}
+
+          <label for="otp">Password:</label>
+          <input type="otp" name="otp" placeholder="otp">
+          <input type="submit"  class="sbtn" name="" value="Submit">
+
+  </form>
+</div>
+</div>
+{% endblock %}

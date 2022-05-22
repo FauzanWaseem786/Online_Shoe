@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+{% block body_block %}
+{% for grp in grps %}
+{% if grp.profile_pic %}
+  <div class="">
+    <img src="{{grp.profile_pic.url}}" alt="">
+  </div>
+  {% else %}
+  <div class="">
+    <img src="{% static 'website_model/7.jpg' %}" alt="">
+  </div>
+  {% endif %}
+  <h1>{{grp.Name}}</h1>
+  <h2>{{grp.Description}}</h2>
+  {%  if f %}
+  <a href="{% url 'website_model:grps' u_name=grp.Name %} "><button type="button" name="button">Leave Group</button></a>
+  {% else %}
+    <a href="{% url 'website_model:grps' u_name=grp.Name %} "><button type="button" name="button">Join Group</button></a>
+
+  {% endif %}
+  {% endfor%}
+
+{%  endblock %}

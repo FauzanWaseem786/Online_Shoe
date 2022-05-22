@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% block body_block %}
+{%  for user in usrs %}
+{% if user.profile_pic %}
+  <div class="container">
+    <img  class="img-circle" height=400 width=400  padding-left="300" src="{{user.profile_pic.url}}" alt="">
+  </div>
+  {% else %}
+  <div class="">
+    <img  class="img-circle"  padding-left="300" src="{% static 'website_model/7.jpg' %}" alt="">
+  </div>
+  {% endif %}
+  <h1 padding-left="300" >{{ user.Name }}</h1>
+  <h2 padding-left="300" >{{user.HomeTown}}</h2>
+  <a href="{% url 'website_model:edt' n=user.Name %}">edit details</a>
+  {% endfor%}
+
+{%  endblock %}

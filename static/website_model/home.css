@@ -1,0 +1,189 @@
+.con{
+      width:1520px;
+      height:852px;
+      background-image: url("bc7.jpg");
+      background-size: cover;
+
+}
+@keyframes txt {
+  from {font-size: 40px;}
+  to {font-size: 50px;}
+
+}
+.vrt{
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin :100px;
+  float: left;
+  text-align: center;
+  animation-name: txt;
+  animation-duration: 4s;
+  font-family: cursive;
+  color: #ffffff;
+  text-decoration: underline;
+ text-decoration-color: red;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+
+}
+.vrt1{
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 500px;
+  margin-left: 500px;
+  text-align: center;
+  animation-name: txt;
+  animation-duration: 4s;
+  font-family: cursive;
+  color: #ffffff;
+  text-decoration: underline;
+ text-decoration-color: red;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+@keyframes ex {
+  0%   {background-image: url("bc7.jpg");}
+  25%  {background-image: url("bc 6.jpg");}
+  50%  {background-image: url("bc 4.jpg");}
+  100% {background-image: url("bc7.jpg");}
+}
+
+.w3-display-container{
+  margin-top: 45px;
+}
+.scr{
+   background-color:  #FFDF00;
+}
+.bright{
+  margin-left: 900px;
+  margin-top: -400px;
+}
+@keyframes fir {
+from {width:0px;}
+  to{width:200px;}
+}
+.foot{
+  width: 1000px;
+  margin-top: 500px;
+  background-color: "gray";
+}
+.bleft{
+    margin-top: -400px;
+}
+
+
+.col-lg-4 img{
+  object-fit: cover;
+  object-position: center;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.grd-box{
+  background-image: url("bck.jpg");
+}
+.grd-box img{
+
+        width: 500px;
+        height:300px;
+        object-fit: cover;
+        object-position: center;
+        margin: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mySlides {display:none;}
+@keyframes example {
+  0%   {background-image: url("bc7.jpg");}
+  25%  {background-image: url("bc 6.jpg");}
+  50%  {background-image: url("bc 4.jpg");}
+  100% {background-image: url("bc7.jpg");}
+}
+.firm{
+
+  background-size: cover;
+  color: #ffffff;
+  font-style: italic;
+  text-align: right;
+  float: right;
+  padding-top: 100px;
+  padding-right: 400px;
+  width: 1220px;
+  height: 800px;
+  animation-name: example;
+  animation-duration:500s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.blolx
+{
+  width: :250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bx{
+  width: :250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-right :30px;
+  margin-left: 150px;
+}
+@keyframes orudar {
+  0%   {background-image: url("ord1.jpg");}
+
+  25% {background-image: url("ord2.jpg");}
+  100% {background-image: url("bc7.jpg");}
+}
+.or{
+  padding: 50px;
+  background-size: cover;
+  color: "black";
+  font-style: italic;
+  text-align: right;
+  float: right;
+  padding-right: 600px;
+  width: 1530px;
+  height: 650px;
+  animation-name: orudar;
+  animation-duration:100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+
+
+}

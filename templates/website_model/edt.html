@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "website_model/home.html" %}
+{% block body_block %}
+  <div class="or">
+    <div class="blolx">
+    <h1>Fill the form with new details</h1>
+      <form method="post" enctype="multipart/form-data" action="{% url 'website_model:edt' %}">
+          {% csrf_token %}
+
+          <label for="Name">Name:</label>
+          <input type="Name" name="Name" placeholder="Name">
+          <label for="Hometown">Hometown:</label>
+          <input type="Hometown" name="Hometown" placeholder="Hometown">
+          <label for="Email">Email:</label>
+          <input type="Email" name="Email" placeholder="Email">
+          <label for="img">Select profile pic:</label>
+          <input type="file" id="img" name="img" accept="image/*">
+
+          <input type="submit"  class="sbtn" name="" value="Submit">
+
+  </form>
+</div>
+</div>
+{% endblock %}

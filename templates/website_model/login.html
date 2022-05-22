@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends 'website_model/home.html' %}
+{% load static %}
+{% block body_block %}
+<div class="or">
+  <div class="blolx">
+    <form  method ="post">
+        {% csrf_token %}
+
+        <div class="form-group">
+          <label for="Email">Username:</label>
+          <input type="text" name="Name" value="">
+
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>  <input type="password" name="password" value="">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your password with anyone else.</small>
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="form-group form-check">
+        <a href="{% url 'website_model:change' %}">Forgot Password?</a>
+
+      </div>
+      <div class="form-group form-check">
+
+          <a href="{% url 'website_model:dele_accnt' %}">Delete exisiting account?</a>
+      </div>
+
+
+    </div>
+</div>
+<
+{%  endblock %}

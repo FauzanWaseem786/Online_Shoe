@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'website_model/home.html' %}
+{% load static  %}
+{%block body_block%}
+<div class="or">
+  <div class="bx">
+
+
+    <h1>Thank you for buying from us Please teel us the reason why you wont to discontinue our service we are very eager to learn from our mistakes and learn to please our clients.</h1>
+
+
+  <form class="" enctype="multipart/form-data"  method="post">
+    {% csrf_token %}
+    <label for="txtr">Reason:</label>
+    <input type="text" name="txtr" value="">
+    <input  class="sbtn" type="submit" name="submit" value="Submit">
+  </form>
+
+
+</div>
+</div>
+{% endblock %}
